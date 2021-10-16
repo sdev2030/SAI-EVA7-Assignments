@@ -1,4 +1,4 @@
-# Session 2.5 - Pytoch 101 - Assignmet 
+# Session 2.5 - Pytoch 101 - Assignment 
 ## Overview:
 In this assignment, we will build a Nueral Net to take two inputs, one Image from MNIST dataset (say 5) & a random number (say 7), and produce predictions for the Image (5) and the sum of the random number and the Image number ( 7 + 5 = 12).
 
