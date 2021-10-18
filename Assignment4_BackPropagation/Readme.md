@@ -5,6 +5,10 @@ Below is an example Neural Network that will used to build an excel sheet with a
 
 It is a single hidden layer neural net with two inputs i1 & i2 and two outputs o1 and o2. Hidden layer values are represented by h1, h2, a_h1 and a_h2. Sigmoid activation function is used to demonstrate the calculations. All variables with 'a_' prefix (like a1_h1, h1_o1 etc) represent the result after applying activation function. E1 and E1 represent the errors for each outputs, we use mean squared error loss function.
 
+Excel Sheet Screen Shot:
+
+![Excel Screen Shot](./images/ExcelSheet Screen Shot.jpg "Excel sheet")
+
 ## Following are the formulas for calculating values for hidden layer:
 
 h1 = w1 * i1 + w2 * i2
