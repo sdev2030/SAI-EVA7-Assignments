@@ -85,8 +85,8 @@ Impact of changing the learning rate to [0.1, 0.2, 0.5, 0.8, 1.0, 2.0] is shown 
 
 # Part 2 - NN for Mnist - 99.4% accurcy with less than 20K parameters and less than 20 Epochs
 
-With the ![Neural Net with GAP](https://github.com/sdev2030/SAI-EVA7-Assignments/blob/main/Assignment4_BackPropagation/EVA7_Session4_nn_FC.ipynb") having 18K parameters and training for 15 Epochs, we could achieve an accuracy of 99.4%.
+With the ![Neural Net with GAP](EVA7_Session4_nn_FC.ipynb "NN Notebook") having 18K parameters and training for 15 Epochs, we could achieve an accuracy of 99.4%.
 
 The network uses combination of 3x3 convolutions, batch normalization, 1x1 convolutions, dropout (Just at the last layer) and Max pooling layers to keep the paramters low and achieve the result. ReLu activation function is used at all the layers except at the final layer. Global Average Pooling (GAP) function is used at the end to a tensor of 10x1x1 and the output is passed thru log_softmax function after removing the unit dimensions with squeeze function.
 
-Same network was changed from GAP function at the end to a Fully connected layer and similar results were achieved. ![Neural Net With FC Layer](https://github.com/sdev2030/SAI-EVA7-Assignments/blob/main/Assignment4_BackPropagation/EVA7_Session4_nn_FC.ipynb "NN Notebook") shows the changes and the result of the training. With the FC layer, the parameters increased to 19.5K but still with in the 20K limit set for the assignment.
+Same network was changed from GAP function at the end to a Fully connected layer and similar results were achieved. ![Neural Net With FC Layer](EVA7_Session4_nn_FC.ipynb "NN Notebook") shows the changes and the result of the training. With the FC layer, the parameters increased to 19.5K but still with in the 20K limit set for the assignment.
