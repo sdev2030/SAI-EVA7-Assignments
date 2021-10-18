@@ -89,4 +89,4 @@ With the ![Neural Net with GAP](./EVA7_Session4_nn_GAP.ipynb"NN Notebook") havin
 
 The network uses combination of 3x3 convolutions, batch normalization, 1x1 convolutions, dropout (Just at the last layer) and Max pooling layers to keep the paramters low and achieve the result. ReLu activation function is used at all the layers except at the final layer. Global Average Pooling (GAP) function is used at the end to a tensor of 10x1x1 and the output is passed thru log_softmax function after removing the unit dimensions with squeeze function.
 
-Same network was changed from GAP function at the end to a Fully connected layer and similar results were achieved. ![Neural Net With FC Layer](./EVA7_Session4_nn_FC.ipynb"NN Notebook") shows the changes and the result of the training.
+Same network was changed from GAP function at the end to a Fully connected layer and similar results were achieved. ![Neural Net With FC Layer](./EVA7_Session4_nn_FC.ipynb"NN Notebook") shows the changes and the result of the training. With the FC layer, the parameters increased to 19.5K but still with in the 20K limit set for the assignment.
