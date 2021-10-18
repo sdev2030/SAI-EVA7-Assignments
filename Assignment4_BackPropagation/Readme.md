@@ -85,7 +85,7 @@ Impact of changing the learning rate to [0.1, 0.2, 0.5, 0.8, 1.0, 2.0] is shown 
 
 # Part 2 - NN for Mnist - 99.4% accurcy with less than 20K parameters and less than 20 Epochs
 
-With the ![Neural Net with GAP](EVA7_Session4_nn_FC.ipynb "NN Notebook") having 18K parameters and training for 15 Epochs, we could achieve an accuracy of 99.4%.
+With the ![Neural Net with GAP](EVA7_Session4_nn_GAP.ipynb "NN Notebook") having 18K parameters and training for 15 Epochs, we could achieve an accuracy of 99.4%.
 
 The network uses combination of 3x3 convolutions, batch normalization, 1x1 convolutions, dropout (Just at the last layer) and Max pooling layers to keep the paramters low and achieve the result. ReLu activation function is used at all the layers except at the final layer. Global Average Pooling (GAP) function is used at the end to a tensor of 10x1x1 and the output is passed thru log_softmax function after removing the unit dimensions with squeeze function.
 
