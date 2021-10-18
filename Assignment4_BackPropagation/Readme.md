@@ -7,7 +7,8 @@ It is a single hidden layer neural net with two inputs i1 & i2 and two outputs o
 
 Excel Sheet Screen Shot:
 
-![Excel Screen Shot]("./images/ExcelSheet Screen Shot.jpg" "Excel sheet")
+![Excel Screen Shot](./images/ExcelSheet%20Screen%20Shot.jpg "Excel sheet")
+
 
 ## Following are the formulas for calculating values for hidden layer:
 
