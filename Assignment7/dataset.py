@@ -52,7 +52,7 @@ transform = A.Compose(
      A.HorizontalFlip(),
      A.ShiftScaleRotate(),
      A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16, 
-                     min_width=16, fill_value=mean, mask_fill_value = None),
+                     min_width=1, fill_value=mean, mask_fill_value = None),
      A.pytorch.transforms.ToTensorV2()
      ])
 
