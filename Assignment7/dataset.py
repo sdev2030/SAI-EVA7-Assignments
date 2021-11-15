@@ -47,23 +47,27 @@ mean, std = compute_mean_std(torchvision.datasets.CIFAR10(root='./data', train=T
 print("Mean = ", mean, "\n STD = ", std)
 
 
-transform = A.Compose(
-    [A.Normalize(mean, std),
-     A.HorizontalFlip(),
+train_transform = A.Compose(
+    [A.HorizontalFlip(),
      A.ShiftScaleRotate(),
      A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16, 
                      min_width=1, fill_value=mean, mask_fill_value = None),
+     A.Normalize(mean, std),
      A.pytorch.transforms.ToTensorV2()
      ])
 
-trainset = Cifar10Dataset(transform=transform)
+test_transform = transforms.Compose(
+    [transforms.Normalize(mean, std),
+     transforms.ToTensor()
+     ])
+trainset = Cifar10Dataset(transform=train_transform)
 
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=128,
                                           shuffle=True, num_workers=2)
 
-testset = Cifar10Dataset(train=False, transform=transform)
+testset = Cifar10Dataset(train=False, transform=test_transform)
 
-testloader = torch.utils.data.DataLoader(testset, batch_size=4,
+testloader = torch.utils.data.DataLoader(testset, batch_size=128,
                                          shuffle=False, num_workers=2)
 
 classes = ('plane', 'car', 'bird', 'cat',
